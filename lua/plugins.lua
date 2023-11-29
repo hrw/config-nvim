@@ -63,14 +63,14 @@ local lsp = require('lsp-zero').preset({
 
 lsp.setup()
 
-vim.lsp.start({
-  name = 'my-server-name',
-  cmd = {'jedi-language-server'},
-  filetypes = {'python'},
-  root_dir = vim.fs.dirname(vim.fs.find({'setup.py', 'pyproject.toml'}, { upward = true })[1]),
-  single_file_support = true,
-})
-require'lspconfig'.jedi_language_server.setup{}
+-- vim.lsp.start({
+--   name = 'my-server-name',
+--   cmd = {'jedi-language-server'},
+--   filetypes = {'python'},
+--   root_dir = vim.fs.dirname(vim.fs.find({'setup.py', 'pyproject.toml'}, { upward = true })[1]),
+--   single_file_support = true,
+-- })
+-- require'lspconfig'.jedi_language_server.setup{}
 
 -- bufferline
 vim.opt.termguicolors = true

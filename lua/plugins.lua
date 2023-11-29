@@ -28,6 +28,10 @@ Plug('saadparwaiz1/cmp_luasnip')
 Plug('hrsh7th/cmp-nvim-lsp')
 Plug('hrsh7th/cmp-nvim-lua')
 
+-- buffer bar
+Plug('nvim-tree/nvim-web-devicons') --" Recommended (for coloured icons)
+Plug('akinsho/bufferline.nvim')
+
 -- Snippets
 Plug('L3MON4D3/LuaSnip')
 Plug('rafamadriz/friendly-snippets')
@@ -67,5 +71,9 @@ vim.lsp.start({
   single_file_support = true,
 })
 require'lspconfig'.jedi_language_server.setup{}
+
+-- bufferline
+vim.opt.termguicolors = true
+require("bufferline").setup{}
 
 require('gitsigns').setup()

@@ -59,8 +59,15 @@ local lsp = require('lsp-zero').preset({
   set_lsp_keymaps = true,
   manage_nvim_cmp = true,
   suggest_lsp_servers = false,
+  configure_diagnostics = false,
 })
 
+lsp.on_attach(function(client, bufnr)
+  lsp.default_keymaps({buffer = bufnr})
+
+  vim.keymap.set('n', 'gr', '<cmd>Telescope lsp_references<cr>', {buffer = true})
+end)
+vim.diagnostic.config({ virtual_text = false })
 lsp.setup()
 
 -- vim.lsp.start({

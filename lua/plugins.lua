@@ -12,6 +12,8 @@ Plug('folke/which-key.nvim')
 Plug('Valloric/MatchTagAlways', {ft = 'html'})
 Plug('tpope/vim-fugitive')
 
+Plug('lewis6991/gitsigns.nvim')
+
 -- LSP
 Plug('neovim/nvim-lspconfig')
 Plug('VonHeikemen/lsp-zero.nvim')
@@ -65,3 +67,5 @@ vim.lsp.start({
   single_file_support = true,
 })
 require'lspconfig'.jedi_language_server.setup{}
+
+require('gitsigns').setup()

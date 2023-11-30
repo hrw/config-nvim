@@ -17,7 +17,6 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 Plug('nvim-lua/plenary.nvim')
 Plug('nvim-telescope/telescope.nvim', {branch = '0.1.x'})
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = vim.fn[':TSUpdate']})
-Plug('nvim-tree/nvim-web-devicons')
 
 Plug('folke/which-key.nvim')
 Plug('Valloric/MatchTagAlways', {ft = 'html'})

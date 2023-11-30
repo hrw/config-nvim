@@ -25,29 +25,25 @@ Plug('tpope/vim-fugitive')
 
 -- LSP
 Plug('neovim/nvim-lspconfig')
+Plug('williamboman/mason.nvim')
+Plug('williamboman/mason-lspconfig.nvim')
 
 -- Debian has Neovim 0.7 still
 if vim.fn.has('nvim-0.8') == 1 then
-
-Plug('VonHeikemen/lsp-zero.nvim')
-Plug('lewis6991/gitsigns.nvim')
-
+	Plug('VonHeikemen/lsp-zero.nvim')
+	Plug('lewis6991/gitsigns.nvim')
 else
-
-Plug('VonHeikemen/lsp-zero.nvim', {branch = 'compat-07'})
-Plug('lewis6991/gitsigns.nvim', {tag = 'v0.6'})
-
+	Plug('VonHeikemen/lsp-zero.nvim', {branch = 'compat-07'})
+	Plug('lewis6991/gitsigns.nvim', {tag = 'v0.6'})
 end
-Plug('williamboman/mason.nvim')
-Plug('williamboman/mason-lspconfig.nvim')
 
 -- Autocompletion
 Plug('hrsh7th/nvim-cmp')
 Plug('hrsh7th/cmp-buffer')
 Plug('hrsh7th/cmp-path')
-Plug('saadparwaiz1/cmp_luasnip')
 Plug('hrsh7th/cmp-nvim-lsp')
 Plug('hrsh7th/cmp-nvim-lua')
+Plug('saadparwaiz1/cmp_luasnip')
 
 -- buffer bar
 Plug('nvim-tree/nvim-web-devicons') --" Recommended (for coloured icons)

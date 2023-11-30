@@ -54,3 +54,7 @@ local map = require("utils").map
 
 map("n", "<F2>", ":Telescope buffers<CR>")
 map("n", "<XF86Favorites>", ":Telescope keymaps<CR>")
+
+-- some UI settings
+
+vim.opt.guifont = "FiraCode Nerd Font:h10"

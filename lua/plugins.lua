@@ -23,11 +23,22 @@ Plug('folke/which-key.nvim')
 Plug('Valloric/MatchTagAlways', {ft = 'html'})
 Plug('tpope/vim-fugitive')
 
-Plug('lewis6991/gitsigns.nvim')
 
 -- LSP
 Plug('neovim/nvim-lspconfig')
+
+-- Debian has Neovim 0.7 still
+if vim.fn.has('nvim-0.8') == 1 then
+
 Plug('VonHeikemen/lsp-zero.nvim')
+Plug('lewis6991/gitsigns.nvim')
+
+else
+
+Plug('VonHeikemen/lsp-zero.nvim', {branch = 'compat-07'})
+Plug('lewis6991/gitsigns.nvim', {tag = 'v0.6'})
+
+end
 Plug('williamboman/mason.nvim')
 Plug('williamboman/mason-lspconfig.nvim')
 

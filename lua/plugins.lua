@@ -47,6 +47,7 @@ Plug('akinsho/bufferline.nvim')
 Plug('L3MON4D3/LuaSnip')
 Plug('rafamadriz/friendly-snippets')
 
+-- use :AnsiEnc to change ANSI to syntax highlight
 Plug('powerman/vim-plugin-AnsiEsc')
 
 -- List ends here. Plugins become visible to Vim after this call.

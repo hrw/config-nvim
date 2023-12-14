@@ -56,6 +56,8 @@ Plug('rafamadriz/friendly-snippets')
 -- use :AnsiEnc to change ANSI to syntax highlight
 Plug('powerman/vim-plugin-AnsiEsc')
 
+Plug('preservim/nerdtree')
+
 -- List ends here. Plugins become visible to Vim after this call.
 vim.call('plug#end')
 

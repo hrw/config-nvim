@@ -24,15 +24,16 @@ Plug('tpope/vim-fugitive')
 
 
 -- LSP
-Plug('neovim/nvim-lspconfig')
 Plug('williamboman/mason.nvim')
 Plug('williamboman/mason-lspconfig.nvim')
 
 -- Debian has Neovim 0.7 still
 if vim.fn.has('nvim-0.8') == 1 then
+	Plug('neovim/nvim-lspconfig')
 	Plug('VonHeikemen/lsp-zero.nvim')
 	Plug('lewis6991/gitsigns.nvim')
 else
+	Plug('neovim/nvim-lspconfig', {tag = 'v0.1.6'})
 	Plug('VonHeikemen/lsp-zero.nvim', {branch = 'compat-07'})
 	Plug('lewis6991/gitsigns.nvim', {tag = 'v0.6'})
 end

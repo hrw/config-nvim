@@ -59,3 +59,5 @@ map("", "<C-s>", ":w <Enter>")
 -- some UI settings
 
 vim.opt.guifont = "FiraCode Nerd Font:h10"
+vim.g.have_nerd_font = true
+

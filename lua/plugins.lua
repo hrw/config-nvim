@@ -39,6 +39,7 @@ else
 	Plug('akinsho/bufferline.nvim', {tag = 'v1.*'})
 end
 
+Plug('vim-scripts/zoom.vim')
 
 -- List ends here. Plugins become visible to Vim after this call.
 vim.call('plug#end')

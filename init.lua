@@ -56,6 +56,8 @@ local map = require("utils").map
 map("n", "<C-s>", ":w <Enter>")
 map("", "<C-s>", ":w <Enter>")
 map("n", "<Esc>", "<cmd>nohlsearch<CR>")
+map("", "<C-ScrollWheelUp>", ":ZoomIn<Enter>")
+map("", "<C-ScrollWheelDown>", ":ZoomOut<Enter>")
 
 -- some UI settings
 

@@ -33,8 +33,10 @@ Plug('sindrets/diffview.nvim')
 -- Debian 'bookworm' has Neovim 0.7
 if vim.fn.has('nvim-0.8') == 1 then
 	Plug('lewis6991/gitsigns.nvim')
+	Plug('akinsho/bufferline.nvim')
 else
 	Plug('lewis6991/gitsigns.nvim', {tag = 'v0.6'})
+	Plug('akinsho/bufferline.nvim', {tag = 'v1.*'})
 end
 
 
@@ -43,3 +45,4 @@ vim.call('plug#end')
 
 require('neogit').setup()
 require('gitsigns').setup()
+require("bufferline").setup()

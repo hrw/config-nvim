@@ -61,3 +61,8 @@ map("", "<C-s>", ":w <Enter>")
 vim.opt.guifont = "FiraCode Nerd Font:h10"
 vim.g.have_nerd_font = true
 
+-- Sets how neovim will display certain whitespace characters in the editor.
+--  See `:help 'list'`
+--  and `:help 'listchars'`
+vim.opt.list = true
+vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }

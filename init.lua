@@ -47,13 +47,14 @@ vim.cmd [[ au BufRead,BufNewFile */playbooks/*.yml set filetype=yaml.ansible ]]
 -- hi folded guifg=green
 -- 
 
--- Ctrl-s as save everywhere
-nmap <C-s> :w <Enter>
-map <C-s> <esc>:w<Enter>
 
 require 'plugins'
 
 local map = require("utils").map
+
+-- Ctrl-s as save everywhere
+map("n", "<C-s>", ":w <Enter>")
+map("", "<C-s>", ":w <Enter>")
 
 -- some UI settings
 

@@ -55,6 +55,7 @@ local map = require("utils").map
 -- Ctrl-s as save everywhere
 map("n", "<C-s>", ":w <Enter>")
 map("", "<C-s>", ":w <Enter>")
+map("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- some UI settings
 

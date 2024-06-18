@@ -19,5 +19,8 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 Plug('nvim-lua/plenary.nvim')
 Plug('nvim-tree/nvim-web-devicons') -- coloured icons (preview with :NvimWebDeviconsHiTest command)
 
+-- automatically adjusts 'shiftwidth' and 'expandtab' heuristically based on the current file
+Plug('tpope/vim-sleuth')
+
 -- List ends here. Plugins become visible to Vim after this call.
 vim.call('plug#end')

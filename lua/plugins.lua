@@ -27,5 +27,19 @@ Plug('preservim/nerdtree')
 Plug('Xuyuanp/nerdtree-git-plugin')
 Plug('tiagofumo/vim-nerdtree-syntax-highlight')
 
+Plug('NeogitOrg/neogit')
+Plug('sindrets/diffview.nvim')
+
+-- Debian 'bookworm' has Neovim 0.7
+if vim.fn.has('nvim-0.8') == 1 then
+	Plug('lewis6991/gitsigns.nvim')
+else
+	Plug('lewis6991/gitsigns.nvim', {tag = 'v0.6'})
+end
+
+
 -- List ends here. Plugins become visible to Vim after this call.
 vim.call('plug#end')
+
+require('neogit').setup()
+require('gitsigns').setup()

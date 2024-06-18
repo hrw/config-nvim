@@ -41,9 +41,14 @@ end
 
 Plug('vim-scripts/zoom.vim')
 
+-- Telescope with deps
+Plug('nvim-telescope/telescope.nvim', {branch = '0.1.x'})
+Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
+
 -- List ends here. Plugins become visible to Vim after this call.
 vim.call('plug#end')
 
 require('neogit').setup()
 require('gitsigns').setup()
 require("bufferline").setup()
+require("nvim-treesitter").setup()

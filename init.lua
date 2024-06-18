@@ -55,6 +55,7 @@ local map = require("utils").map
 -- Ctrl-s as save everywhere
 map("n", "<C-s>", ":w <Enter>")
 map("", "<C-s>", ":w <Enter>")
+
 map("n", "<Esc>", "<cmd>nohlsearch<CR>")
 map("", "<C-ScrollWheelUp>", ":ZoomIn<Enter>")
 map("", "<C-ScrollWheelDown>", ":ZoomOut<Enter>")
@@ -74,3 +75,8 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 vim.opt.scrolloff = 10
 
 vim.opt.showtabline = 2
+
+-- lets make sure treesitter is installed and then foldmethod get set
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+vim.opt.foldlevel = 99
+vim.opt.foldmethod = "expr"

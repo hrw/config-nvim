@@ -37,6 +37,7 @@ vim.opt.listchars = "tab:>·,trail:·,extends:>"
 vim.cmd [[ autocmd FileType python setlocal colorcolumn=80 ]]
 vim.cmd [[ autocmd FileType markdown setlocal textwidth=80 spell spelllang=en_gb ]]
 vim.cmd [[ autocmd FileType yaml setlocal cursorcolumn ]]
+vim.cmd [[ autocmd FileType yaml.ansible setlocal cursorcolumn ]]
 vim.cmd [[ au BufRead,BufNewFile */playbooks/*.yml set filetype=yaml.ansible ]]
 -- 
 -- com Wq wq

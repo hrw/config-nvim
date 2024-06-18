@@ -46,8 +46,10 @@ vim.cmd [[ au BufRead,BufNewFile */playbooks/*.yml set filetype=yaml.ansible ]]
 -- hi folded guibg=bg
 -- hi folded guifg=green
 -- 
--- nmap <C-s> :w <Enter>
--- map <C-s> <esc>:w<Enter>
+
+-- Ctrl-s as save everywhere
+nmap <C-s> :w <Enter>
+map <C-s> <esc>:w<Enter>
 
 require 'plugins'
 

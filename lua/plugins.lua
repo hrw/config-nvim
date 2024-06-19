@@ -45,6 +45,8 @@ Plug('vim-scripts/zoom.vim')
 Plug('nvim-telescope/telescope.nvim', {branch = '0.1.x'})
 Plug('nvim-treesitter/nvim-treesitter', {['do'] = ':TSUpdate'})
 
+Plug('pearofducks/ansible-vim')
+
 -- List ends here. Plugins become visible to Vim after this call.
 vim.call('plug#end')
 

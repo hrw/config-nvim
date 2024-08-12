@@ -60,6 +60,8 @@ map("n", "<Esc>", "<cmd>nohlsearch<CR>")
 map("", "<C-ScrollWheelUp>", ":ZoomIn<Enter>")
 map("", "<C-ScrollWheelDown>", ":ZoomOut<Enter>")
 
+map("", "<F3>", ":Telescope find_files<Enter>")
+
 -- some UI settings
 
 vim.opt.guifont = "FiraCode Nerd Font:h10"
